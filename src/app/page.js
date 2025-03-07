@@ -120,21 +120,21 @@ export default function Home() {
             {[
               {
                 title: "Transformación de Prendas",
-                description: "Renovamos y actualizamos tus prendas con arreglos profesionales. Especialistas en todo tipo de ropa.",
+                description: "Modificamos tus prendas para darles el estilo que buscas. Adaptamos tu ropa a las últimas tendencias con un toque profesional.",
                 icon: (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 )
               },
               {
                 title: "Arreglos y Ajustes",
-                description: "Ajustes perfectos para todo tipo de ropa: vestidos, pantalones, chaquetas y más. Calidad garantizada.",
+                description: "Tu ropa a tu medida exacta. Ajustamos todo tipo de prendas para que luzcas siempre impecable.",
                 icon: (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z" />
                 )
               },
               {
-                title: "Servicio de Tintorería",
-                description: "Servicio profesional de limpieza y cuidado para tus prendas delicadas. Resultados garantizados.",
+                title: "Teñido de Prendas",
+                description: "Cambiamos el color de tus prendas. Dale un nuevo look a tu ropa con el tono que prefieras.",
                 icon: (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                 )
