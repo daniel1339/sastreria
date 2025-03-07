@@ -134,9 +134,9 @@ export default function Home() {
               },
               {
                 title: "Teñido de Ropa",
-                description: "Servicio especializado en teñir tus prendas. Cambiamos el color de tu ropa al tono que desees con resultados duraderos.",
+                description: "Teñimos tus prendas con calidad.",
                 icon: (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 2L2 6v14a2 2 0 002 2h16a2 2 0 002-2V6l-4-4M3 6h18M16 10a4 4 0 01-8 0" />
                 )
               }
             ].map((service, index) => (
