@@ -20,6 +20,13 @@ export const metadata = {
   alternates: {
     canonical: "https://beatrizmesa.com",
   },
+  other: {
+    "link": [
+      { rel: "preload", href: "/dist/ella.jpeg", as: "image" },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" }
+    ]
+  }
 };
 
 export default function Home() {
@@ -90,6 +97,8 @@ export default function Home() {
                     objectPosition: "center"
                   }}
                   priority
+                  quality={75}
+                  loading="eager"
                   className="rounded-lg"
                 />
               </div>
@@ -172,7 +181,7 @@ export default function Home() {
                 {[
                   {
                     title: "Ubicación",
-                    content: "Carrera 25 # 39 sur 16",
+                    content: ["Carrera 25 # 39 sur 16", "frente a Vitta puerta roja al lado de la tienda", "El Chingui, Envigado"],
                     icon: (
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -230,8 +239,8 @@ export default function Home() {
                     width="100%" 
                     height="100%" 
                     style={{border: 0}} 
-                    allowFullScreen="" 
-                    loading="lazy" 
+                    loading="lazy"
+                    fetchPriority="low"
                     referrerPolicy="no-referrer-when-downgrade"
                   ></iframe>
                 </div>
