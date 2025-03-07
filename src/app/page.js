@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FaScissors, FaTshirt, FaRulerCombined, FaMapMarkerAlt, FaPhone, FaClock, FaBars } from 'react-icons/fa';
+import IconWrapper from './components/IconWrapper';
 
 export const metadata = {
   title: "Sastrería y Arreglos de Ropa en Envigado | Beatriz Mesa",
@@ -54,7 +55,7 @@ export default function Home() {
             ))}
           </ul>
           <button className="sm:hidden">
-            <FaBars className="w-6 h-6" />
+            <IconWrapper name="bars" className="w-6 h-6" />
           </button>
         </nav>
       </header>
@@ -120,17 +121,17 @@ export default function Home() {
               {
                 title: "Transformación de Prendas",
                 description: "Modificamos tus prendas para darles el estilo que buscas. Adaptamos tu ropa a las últimas tendencias con un toque profesional.",
-                icon: <FaScissors />
+                iconName: "scissors"
               },
               {
                 title: "Arreglos y Ajustes",
                 description: "Tu ropa a tu medida exacta. Ajustamos todo tipo de prendas para que luzcas siempre impecable.",
-                icon: <FaRulerCombined />
+                iconName: "ruler"
               },
               {
                 title: "Teñido de Ropa",
                 description: "Teñimos tus prendas con calidad.",
-                icon: <FaTshirt />
+                iconName: "tshirt"
               }
             ].map((service, index) => (
               <div key={index} className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
@@ -138,7 +139,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-[#fff0f8] rounded-full opacity-20 transform scale-0 group-hover:scale-100 transition-transform"></div>
                   <div className="relative flex justify-center">
                     <div className="h-16 w-16 text-[#ff69b4] transform transition-transform group-hover:rotate-6">
-                      {service.icon}
+                      <IconWrapper name={service.iconName} className="w-full h-full" />
                     </div>
                   </div>
                 </div>
@@ -177,7 +178,7 @@ export default function Home() {
                   {
                     title: "Ubicación",
                     content: ["Carrera 25 # 39 sur 16", "frente a Vitta puerta roja al lado de la tienda", "El Chingui, Envigado"],
-                    icon: <FaMapMarkerAlt />
+                    iconName: "location"
                   },
                   {
                     title: "Contáctanos",
@@ -185,7 +186,7 @@ export default function Home() {
                       <a key="tel1" href="tel:6042712000" className="hover:text-[#ff69b4] transition-colors">Teléfono: (604) 271 2000</a>,
                       <a key="tel2" href="tel:+573052905604" className="hover:text-[#ff69b4] transition-colors">Celular: 305 290 5604</a>
                     ],
-                    icon: <FaPhone />
+                    iconName: "phone"
                   },
                   {
                     title: "Horario",
@@ -193,12 +194,12 @@ export default function Home() {
                       "Lunes a Viernes: 9:00 - 19:00",
                       "Sábados: 10:00 - 14:00"
                     ],
-                    icon: <FaClock />
+                    iconName: "clock"
                   }
                 ].map((item, index) => (
                   <div key={index} className="flex items-start space-x-4">
                     <div className="flex-shrink-0 w-12 h-12 bg-[#ff69b4] bg-opacity-10 rounded-lg flex items-center justify-center">
-                      <span className="text-[#ff69b4] text-2xl">{item.icon}</span>
+                      <IconWrapper name={item.iconName} className="text-[#ff69b4] text-2xl" />
                     </div>
                     <div>
                       <h3 className="text-xl font-medium text-[#ff69b4] mb-2">{item.title}</h3>
