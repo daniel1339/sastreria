@@ -137,9 +137,9 @@ export default function Home() {
                 <div className="relative mb-6">
                   <div className="absolute inset-0 bg-[#fff0f8] rounded-full opacity-20 transform scale-0 group-hover:scale-100 transition-transform"></div>
                   <div className="relative flex justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-[#ff69b4] transform transition-transform group-hover:rotate-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <div className="h-16 w-16 text-[#ff69b4] transform transition-transform group-hover:rotate-6">
                       {service.icon}
-                    </svg>
+                    </div>
                   </div>
                 </div>
                 <h3 className="text-xl font-medium text-[#ff69b4] mb-4 text-center">{service.title}</h3>
