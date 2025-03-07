@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FaScissors, FaTshirt, FaRulerCombined, FaMapMarkerAlt, FaPhone, FaClock, FaBars } from 'react-icons/fa';
 
 export const metadata = {
   title: "Sastrería y Arreglos de Ropa en Envigado | Beatriz Mesa",
@@ -53,9 +54,7 @@ export default function Home() {
             ))}
           </ul>
           <button className="sm:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
+            <FaBars className="w-6 h-6" />
           </button>
         </nav>
       </header>
@@ -121,23 +120,17 @@ export default function Home() {
               {
                 title: "Transformación de Prendas",
                 description: "Modificamos tus prendas para darles el estilo que buscas. Adaptamos tu ropa a las últimas tendencias con un toque profesional.",
-                icon: (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                )
+                icon: <FaScissors />
               },
               {
                 title: "Arreglos y Ajustes",
                 description: "Tu ropa a tu medida exacta. Ajustamos todo tipo de prendas para que luzcas siempre impecable.",
-                icon: (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z" />
-                )
+                icon: <FaRulerCombined />
               },
               {
                 title: "Teñido de Ropa",
                 description: "Teñimos tus prendas con calidad.",
-                icon: (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 2L2 6v14a2 2 0 002 2h16a2 2 0 002-2V6l-4-4M3 6h18M16 10a4 4 0 01-8 0" />
-                )
+                icon: <FaTshirt />
               }
             ].map((service, index) => (
               <div key={index} className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
@@ -184,24 +177,15 @@ export default function Home() {
                   {
                     title: "Ubicación",
                     content: ["Carrera 25 # 39 sur 16", "frente a Vitta puerta roja al lado de la tienda", "El Chingui, Envigado"],
-                    icon: (
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
-                    )
+                    icon: <FaMapMarkerAlt />
                   },
                   {
                     title: "Contáctanos",
                     content: [
-                      "Teléfono: (604) 271 2002",
-                      "Celular: 305 290 5604"
+                      <a key="tel1" href="tel:6042712000" className="hover:text-[#ff69b4] transition-colors">Teléfono: (604) 271 2000</a>,
+                      <a key="tel2" href="tel:+573052905604" className="hover:text-[#ff69b4] transition-colors">Celular: 305 290 5604</a>
                     ],
-                    icon: (
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                      </svg>
-                    )
+                    icon: <FaPhone />
                   },
                   {
                     title: "Horario",
@@ -209,16 +193,12 @@ export default function Home() {
                       "Lunes a Viernes: 9:00 - 19:00",
                       "Sábados: 10:00 - 14:00"
                     ],
-                    icon: (
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    )
+                    icon: <FaClock />
                   }
                 ].map((item, index) => (
                   <div key={index} className="flex items-start space-x-4">
                     <div className="flex-shrink-0 w-12 h-12 bg-[#ff69b4] bg-opacity-10 rounded-lg flex items-center justify-center">
-                      <span className="text-[#ff69b4]">{item.icon}</span>
+                      <span className="text-[#ff69b4] text-2xl">{item.icon}</span>
                     </div>
                     <div>
                       <h3 className="text-xl font-medium text-[#ff69b4] mb-2">{item.title}</h3>
