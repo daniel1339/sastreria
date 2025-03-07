@@ -1,24 +1,24 @@
 import Image from "next/image";
 
 export const metadata = {
-  title: "Sastrería Beatriz Mesa | Arreglos y reformas a la medida",
-  description: "Sastrería Beatriz Mesa ofrece servicios de arreglos y reformas a la medida, diseños exclusivos con la mejor calidad y atención personalizada.",
-  keywords: ["sastrería", "arreglos y reformas a la medida", "Beatriz Mesa", "ropa a medida", "sastres", "arreglos de ropa", "alta costura"],
+  title: "Sastrería y Arreglos de Ropa en Envigado | Beatriz Mesa",
+  description: "Sastrería Beatriz Mesa en Envigado: Expertos en arreglos de ropa, reformas y tintorería. Más de 20 años arreglando y transformando prendas. Servicio personalizado y entregas rápidas.",
+  keywords: ["sastrería envigado", "arreglos de ropa envigado", "reformas de ropa envigado", "tintorería envigado", "arreglos de vestidos", "ajustes de ropa", "costurera envigado", "sastrería antioquia", "arreglos de pantalones", "arreglos de vestidos de fiesta"],
   openGraph: {
-    title: "Sastrería Beatriz Mesa | Arreglos y reformas a la medida",
-    description: "Servicios de sastrería y arreglos y reformas a la medida con la mejor calidad y atención personalizada",
+    title: "Sastrería y Arreglos de Ropa en Envigado | Beatriz Mesa",
+    description: "Expertos en arreglos de ropa, reformas y tintorería en Envigado. Servicio personalizado, calidad garantizada y entregas rápidas. ¡Visítanos!",
     images: [{ url: "/dts/ella.jpg" }],
     locale: "es_ES",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sastrería Beatriz Mesa | Arreglos y reformas a la medida",
-    description: "Servicios de sastrería y arreglos y reformas a la medida con la mejor calidad y atención personalizada",
+    title: "Sastrería y Arreglos de Ropa en Envigado | Beatriz Mesa",
+    description: "Expertos en arreglos de ropa, reformas y tintorería en Envigado. Servicio personalizado, calidad garantizada y entregas rápidas. ¡Visítanos!",
     images: ["/dts/ella.jpg"],
   },
   alternates: {
-    canonical: "https://beatrizmesa.com",
+    canonical: "https://www.beatrizmesasastreria.com",
   },
   other: {
     "link": [
@@ -65,13 +65,13 @@ export default function Home() {
           <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="space-y-6">
               <h1 className="text-3xl sm:text-4xl font-light leading-tight">
-                <span className="text-[#ff69b4] block mb-1">Arte y</span>
-                <span className="text-[#ff69b4] block mb-1">elegancia en</span>
-                <span className="text-[#ff8dc7]">cada puntada</span>
+                <span className="text-[#ff69b4] block mb-1">Sastrería y</span>
+                <span className="text-[#ff69b4] block mb-1">arreglos de ropa en</span>
+                <span className="text-[#ff8dc7]">Envigado</span>
               </h1>
               
               <p className="text-base md:text-lg leading-relaxed max-w-xl text-[#4a4a4a]/80">
-                Arreglamos y reformamos tus prendas favoritas con estilo y creatividad, para que reflejen tu personalidad.
+                Expertos en arreglos y reformas de ropa en Envigado. Transformamos tus prendas con profesionalismo y atención personalizada.
               </p>
 
               <a 
@@ -118,21 +118,21 @@ export default function Home() {
             {[
               {
                 title: "Transformación de Prendas",
-                description: "Renovamos y actualizamos tus prendas favoritas dándoles un nuevo estilo y vida.",
+                description: "Renovamos y actualizamos tus prendas con arreglos profesionales. Especialistas en todo tipo de ropa.",
                 icon: (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 )
               },
               {
                 title: "Arreglos y Ajustes",
-                description: "Adaptamos tus prendas favoritas para un ajuste perfecto y una apariencia renovada.",
+                description: "Ajustes perfectos para todo tipo de ropa: vestidos, pantalones, chaquetas y más. Calidad garantizada.",
                 icon: (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z" />
                 )
               },
               {
                 title: "Servicio de Tintorería",
-                description: "Limpieza y cuidado especializado para tus prendas más delicadas.",
+                description: "Servicio profesional de limpieza y cuidado para tus prendas delicadas. Resultados garantizados.",
                 icon: (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                 )
@@ -162,8 +162,8 @@ export default function Home() {
               Sobre Beatriz Mesa
               <span className="absolute -bottom-4 left-1/2 w-24 h-1 bg-[#ff8dc7] transform -translate-x-1/2"></span>
             </h2>
-            <p className="mb-6 text-lg leading-relaxed">Con más de 20 años de experiencia en el arte de la sastrería, Beatriz Mesa ha perfeccionado el oficio de crear arreglos y reformas que realzan la belleza y personalidad de cada cliente.</p>
-            <p className="text-lg leading-relaxed">Nuestro compromiso es ofrecer un servicio personalizado y de la más alta calidad, utilizando técnicas tradicionales combinadas con innovaciones modernas.</p>
+            <p className="mb-6 text-lg leading-relaxed">Con más de 20 años de experiencia en sastrería y arreglos de ropa en Envigado, Beatriz Mesa ha perfeccionado el arte de transformar y ajustar prendas, garantizando la satisfacción de cada cliente.</p>
+            <p className="text-lg leading-relaxed">Nuestro compromiso es ofrecer el mejor servicio de arreglos y reformas, combinando técnicas tradicionales con métodos modernos para resultados excepcionales.</p>
           </div>
         </section>
 
