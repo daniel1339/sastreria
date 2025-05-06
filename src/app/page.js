@@ -38,7 +38,13 @@ export default function Home() {
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#ff69b4] via-[#ff8dc7] to-[#ff69b4]"></div>
         <nav className="flex justify-between items-center">
           <div className="text-2xl font-semibold text-[#ff69b4] relative">
-            <span className="relative z-10">Beatriz Mesa</span>
+            <Image 
+              src="/dist/beatriz.png" 
+              alt="Beatriz Mesa" 
+              width={150}
+              height={50}
+              className="relative z-10"
+            />
             <span className="absolute -bottom-2 left-0 w-full h-0.5 bg-[#ff8dc7] transform scale-x-0 transition-transform origin-left group-hover:scale-x-100"></span>
           </div>
           <ul className="hidden sm:flex gap-8 text-sm">
