@@ -1,5 +1,3 @@
-'use client';
-
 import { FaCut, FaTshirt, FaRulerCombined, FaMapMarkerAlt, FaPhone, FaClock, FaBars } from 'react-icons/fa';
 
 const icons = {
@@ -12,11 +10,11 @@ const icons = {
   bars: FaBars
 };
 
-export default function IconWrapper({ name, className }) {
+export default function IconWrapper({ name, className, ...props }) {
   const Icon = icons[name];
   if (!Icon) {
     console.warn(`Icon "${name}" not found`);
     return null;
   }
-  return <Icon className={className} />;
+  return <Icon className={className} {...props} />;
 } 
