@@ -8,6 +8,9 @@ export default function Footer() {
         <div className="text-xl font-semibold">{siteData.site.name}</div>
         <div className="text-sm">© {siteData.site.year} {siteData.site.name}. Todos los derechos reservados.</div>
       </div>
+      <div className="text-xs text-white opacity-70 mt-2 text-center">
+        Desarrollado por <a href="https://arguellesdev.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#ff8dc7]">Daniel Arguelles</a>
+      </div>
     </footer>
   );
 } 

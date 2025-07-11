@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { siteData } from '../../constants/data.js';
 import IconWrapper from '../ui/IconWrapper.jsx';
+import ClientHamburger from './ClientHamburger.jsx';
 
 export default function Header() {
   return (
@@ -12,7 +13,8 @@ export default function Header() {
             src="/dist/beatriz.png" 
             alt="Beatriz Mesa" 
             width={150}
-            height={50}
+            height={38}
+            sizes="150px"
             className="relative z-10"
             priority
           />
@@ -32,10 +34,9 @@ export default function Header() {
             </li>
           ))}
         </ul>
-        
-        <button className="sm:hidden" aria-label="Menú móvil">
-          <IconWrapper name="bars" className="w-6 h-6" />
-        </button>
+        <div className="sm:hidden">
+          <ClientHamburger navigation={siteData.navigation} />
+        </div>
       </nav>
     </header>
   );

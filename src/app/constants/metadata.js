@@ -53,7 +53,7 @@ export const openGraphConfig = {
   description: "Expertos en arreglos de ropa, reformas y tintorería en Envigado. Servicio personalizado, calidad garantizada y entregas rápidas. ¡Visítanos!",
   images: [
     {
-      url: "/dist/ella.jpg",
+      url: "https://www.beatrizmesasastreria.com/dist/ella.jpg",
       width: 1200,
       height: 630,
       alt: "Sastrería Beatriz Mesa - Taller de confección profesional"
@@ -71,7 +71,7 @@ export const twitterConfig = {
   card: "summary_large_image",
   title: "Sastrería y Arreglos de Ropa en Envigado | Beatriz Mesa",
   description: "Expertos en arreglos de ropa, reformas y tintorería en Envigado. Servicio personalizado, calidad garantizada y entregas rápidas. ¡Visítanos!",
-  images: ["/dist/ella.jpg"],
+  images: ["https://www.beatrizmesasastreria.com/dist/ella.jpg"],
   creator: "@beatrizmesasastreria"
 };
 
